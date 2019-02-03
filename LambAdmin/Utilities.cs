@@ -868,10 +868,10 @@ namespace LambAdmin
         public void UTILS_SetClientConnectDvar(Entity player)
         {
             player.SetClientDvar("motd", (string)ConfigValues.G_motd);
+            player.SetClientDvar("cg_objectiveText", (string)ConfigValues.ObjectiveText);
             player.SetClientDvar("sv_network_fps", "200");
             player.SetClientDvar("sys_lockThreads", "all");
             player.SetClientDvar("com_maxFrameTime", "1000");
-            player.SetClientDvar("g_motd", (string)ConfigValues.G_motd);
             player.SetClientDvar("rate", "25000");
             if (bool.Parse(Sett_GetString("settings_enable_autofpsunlock")))
                 {
