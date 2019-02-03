@@ -1,0 +1,6 @@
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\obj\Debug\LambAdmin.csprojResolveAssemblyReference.cache
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\bin\Debug\LambAdmin.dll
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\bin\Debug\LambAdmin.pdb
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\bin\Debug\InfinityScript.dll
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\obj\Debug\LambAdmin.dll
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\obj\Debug\LambAdmin.pdb

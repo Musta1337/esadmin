@@ -1,0 +1,13 @@
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\bin\Release\LambAdmin.dll
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\bin\Release\LambAdmin.pdb
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\bin\Release\InfinityScript.dll
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\obj\Release\LambAdmin.csprojResolveAssemblyReference.cache
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\obj\Release\LambAdmin.dll
+D:\KaCAdmin\LambAdminProjects\LambAdmin\LambAdmin\obj\Release\LambAdmin.pdb
+D:\UIC\Promodbase\LambAdmin\bin\Release\LambAdmin.dll
+D:\UIC\Promodbase\LambAdmin\bin\Release\LambAdmin.pdb
+D:\UIC\Promodbase\LambAdmin\obj\Release\LambAdmin.csprojResolveAssemblyReference.cache
+D:\UIC\Promodbase\LambAdmin\obj\Release\LambAdmin.csproj.CoreCompileInputs.cache
+D:\UIC\Promodbase\LambAdmin\obj\Release\LambAdmin.csproj.CopyComplete
+D:\UIC\Promodbase\LambAdmin\obj\Release\LambAdmin.dll
+D:\UIC\Promodbase\LambAdmin\obj\Release\LambAdmin.pdb

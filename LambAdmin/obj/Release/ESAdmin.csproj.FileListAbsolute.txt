@@ -1,0 +1,28 @@
+D:\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.csproj.CoreCompileInputs.cache
+D:\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.csproj.CopyComplete
+C:\Musta\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.csprojAssemblyReference.cache
+C:\Musta\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.csproj.CoreCompileInputs.cache
+C:\Musta\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.csproj.CopyComplete
+C:\Musta\UIC\Promodbase\LambAdmin\bin\Release\ESAdmin.dll
+C:\Musta\UIC\Promodbase\LambAdmin\bin\Release\ESAdmin.pdb
+C:\Musta\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.dll
+C:\Musta\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.pdb
+D:\UIC\Promodbase\LambAdmin\bin\Release\ESAdmin.dll
+D:\UIC\Promodbase\LambAdmin\bin\Release\ESAdmin.pdb
+D:\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.dll
+D:\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.pdb
+D:\UIC\Promodbase\LambAdmin\obj\Release\ESAdmin.csprojResolveAssemblyReference.cache
+D:\MW3 Development\Administration Scripts\Promodbase\LambAdmin\bin\Release\ESAdmin.dll
+D:\MW3 Development\Administration Scripts\Promodbase\LambAdmin\bin\Release\ESAdmin.pdb
+D:\MW3 Development\Administration Scripts\Promodbase\LambAdmin\obj\Release\ESAdmin.csprojAssemblyReference.cache
+D:\MW3 Development\Administration Scripts\Promodbase\LambAdmin\obj\Release\ESAdmin.csproj.CoreCompileInputs.cache
+D:\MW3 Development\Administration Scripts\Promodbase\LambAdmin\obj\Release\ESAdmin.csproj.CopyComplete
+D:\MW3 Development\Administration Scripts\Promodbase\LambAdmin\obj\Release\ESAdmin.dll
+D:\MW3 Development\Administration Scripts\Promodbase\LambAdmin\obj\Release\ESAdmin.pdb
+D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\bin\Release\ESAdmin.dll
+D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\bin\Release\ESAdmin.pdb
+D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\obj\Release\ESAdmin.csproj.CoreCompileInputs.cache
+D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\obj\Release\ESAdmin.csproj.CopyComplete
+D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\obj\Release\ESAdmin.dll
+D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\obj\Release\ESAdmin.pdb
+D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\bin\Release\InfinityScript.dll
