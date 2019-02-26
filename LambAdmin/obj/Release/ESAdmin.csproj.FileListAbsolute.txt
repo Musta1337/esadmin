@@ -26,3 +26,10 @@ D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\obj\Releas
 D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\obj\Release\ESAdmin.dll
 D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\obj\Release\ESAdmin.pdb
 D:\MW3 Development\Administration Scripts\Backup\Promodbase\LambAdmin\bin\Release\InfinityScript.dll
+C:\Users\musta\Documents\GitHub\esadmin\LambAdmin\bin\Release\ESAdmin.dll
+C:\Users\musta\Documents\GitHub\esadmin\LambAdmin\bin\Release\ESAdmin.pdb
+C:\Users\musta\Documents\GitHub\esadmin\LambAdmin\obj\Release\ESAdmin.csprojAssemblyReference.cache
+C:\Users\musta\Documents\GitHub\esadmin\LambAdmin\obj\Release\ESAdmin.csproj.CoreCompileInputs.cache
+C:\Users\musta\Documents\GitHub\esadmin\LambAdmin\obj\Release\ESAdmin.csproj.CopyComplete
+C:\Users\musta\Documents\GitHub\esadmin\LambAdmin\obj\Release\ESAdmin.dll
+C:\Users\musta\Documents\GitHub\esadmin\LambAdmin\obj\Release\ESAdmin.pdb

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using InfinityScript;
+using System.IO;
 
 namespace LambAdmin
 {
@@ -10,6 +11,7 @@ namespace LambAdmin
         volatile string MapRotation = "";
         public static partial class ConfigValues
         {
+            public static List<string> RulesList = new List<string>();
             public static int settings_warn_maxwarns
             {
                 get
@@ -38,6 +40,7 @@ namespace LambAdmin
         public volatile List<string> BanList = new List<string>();
 
         public volatile List<string> XBanList = new List<string>();
+
 
         public volatile Dictionary<string, string> CommandAliases = new Dictionary<string, string>();
 
@@ -298,6 +301,12 @@ namespace LambAdmin
             if (!System.IO.File.Exists(ConfigValues.ConfigPath + @"Commands\xbans.txt"))
                 System.IO.File.WriteAllLines(ConfigValues.ConfigPath + @"Commands\xbans.txt", new string[0]);
 
+            if (!System.IO.File.Exists(ConfigValues.ConfigPath + @"Commands\rules.txt"))
+                System.IO.File.WriteAllLines(ConfigValues.ConfigPath + @"Commands\rules.txt", new string[]
+                    {
+                        "^1Rules are important.",
+                    });
+
             if (!System.IO.Directory.Exists(ConfigValues.ConfigPath + @"Commands\internal"))
                 System.IO.Directory.CreateDirectory(ConfigValues.ConfigPath + @"Commands\internal");
 
@@ -331,6 +340,14 @@ namespace LambAdmin
                 (sender, arguments, optarg) =>
                 {
                     WriteChatToPlayer(sender, "^1ES Admin ^3" + ConfigValues.Version + "^1. ^3!credits for more information.");
+                }));
+
+            //HideBombIcon
+            CommandList.Add(new Command("hidebombicon", 0, Command.Behaviour.Normal,
+                (sender, arguments, optarg) =>
+                {
+                    CMD_HideBombIconAndSmoke(sender);
+                    WriteChatToPlayer(sender, Command.GetString("hidebombicon", "message"));
                 }));
 
             // CREDITS
@@ -1395,6 +1412,18 @@ namespace LambAdmin
                         WriteChatToPlayer(sender, Command.GetString("amsg", "confirmation"));
                 }));
 
+            if (System.IO.File.Exists(ConfigValues.ConfigPath + @"Commands\rules.txt"))
+            {
+                ConfigValues.RulesList = File.ReadAllLines(ConfigValues.ConfigPath + @"Commands\rules.txt").ToList();
+
+                // RULES
+                CommandList.Add(new Command("rules", 0, Command.Behaviour.Normal,
+                (sender, arguments, optarg) =>
+                {
+                    WriteChatToPlayerMultiline(sender, ConfigValues.RulesList.ToArray(), 1000);
+                }));
+            }
+
             // FREEZE
             CommandList.Add(new Command("freeze", 1, Command.Behaviour.Normal,
                 (sender, arguments, optard) =>
@@ -1905,6 +1934,12 @@ namespace LambAdmin
                 {
                     ExecuteCommand("dropclient " + target.GetEntityNumber() + " \"" + reason + "\"");
                 });
+        }
+
+        public void CMD_HideBombIconAndSmoke(Entity player)
+        {
+            player.SetClientDvar("waypointIconHeight", "1");
+            player.SetClientDvar("waypointIconWidth", "1");
         }
 
         public void CMD_tmpban(Entity target, string reason = "You have been tmpbanned")

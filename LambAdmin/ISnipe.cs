@@ -318,12 +318,6 @@ namespace LambAdmin
                     }));
                 }));
             // HIDEBOMBICON
-            CommandList.Add(new Command("hidebombicon", 0, Command.Behaviour.Normal,
-                (sender, arguments, optarg) =>
-                {
-                    CMD_HideBombIconAndSmoke(sender);
-                    WriteChatToPlayer(sender, Command.GetString("hidebombicon", "message"));
-                }));
 
             // KNIFE
             CommandList.Add(new Command("knife", 1, Command.Behaviour.Normal,
@@ -484,12 +478,6 @@ namespace LambAdmin
                     sender.SetClientDvar("r_filmTweakBrightness", "0.2");
                     return;
             }
-        }
-
-        public void CMD_HideBombIconAndSmoke(Entity player)
-        {
-            player.SetClientDvar("waypointIconHeight", "1");
-            player.SetClientDvar("waypointIconWidth", "1");
         }
 
         public void CMD_knife(bool state)
