@@ -26,8 +26,8 @@ namespace LambAdmin
         public LAdmin()
             : base()
         {
-            WriteLog.Info("[ES]Admin v1.0.0.4 Final build by Musta.");
-            MainLog.WriteInfo("[ES]Admin v1.0.0.4 Final build by Musta.");
+            WriteLog.Info("[ES]Admin v1.0.0.6 by Musta.");
+            MainLog.WriteInfo("[ES]Admin v1.0.0.6 by Musta.");
 
             if (!Directory.Exists(ConfigValues.ConfigPath))
             {

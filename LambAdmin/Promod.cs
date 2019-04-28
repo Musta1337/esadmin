@@ -99,7 +99,7 @@ namespace LambAdmin
             ExecuteCommand("set scr_game_matchstarttime 5");
             ExecuteCommand("set scr_game_playerwaittime 3");
             ExecuteCommand("set scr_sd_planttime 5");
-            ExecuteCommand("set scr_sd_defusetime 5");
+            ExecuteCommand("set scr_sd_defusetime 7.5");
             Call("setdvar", "glass_DamageToDestroy", "50");
             if (mode != "gun" && mode != "oic" && mode != "dm" && mode != "war" && mode != "infect")
             {
@@ -192,6 +192,12 @@ namespace LambAdmin
         private void PROMOD_OnPlayerSpawn(Entity player)
         {
             player.Call("clearperks");
+            if (player.Call<int>("hasperk", "specialty_reducedsway") == 0)
+            {
+                player.SetPerk("specialty_bulletaccuracy", true, false);
+                player.SetPerk("specialty_reducedsway", true, false);
+                player.SetPerk("specialty_coldblooded", true, false);
+            }
             player.Call("GiveMaxAmmo", player.CurrentWeapon);
             if (player.HasWeapon("flash_grenade_mp"))
             {

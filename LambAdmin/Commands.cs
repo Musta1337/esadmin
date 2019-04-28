@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using InfinityScript;
 using System.IO;
+using System.Reflection;
 
 namespace LambAdmin
 {
@@ -356,13 +357,12 @@ namespace LambAdmin
                 {
                     WriteChatToPlayerMultiline(sender, new string[]
                     {
-                        string.Format("^1ES Admin ^3{0} by Musta", ConfigValues.Version),
-                        "^2BaseScript from ^1RGAdmin ^2by lambder.",
+                        string.Format("^1ES Admin ^3{0} ^1by ^:Musta", ConfigValues.Version),
+                        "^2BaseScript from ^1RGAdmin.",
                         "^2Promod Module Added.",
                         "^2iSnipe Functions fixed.",
                         "^2Performance Dvar added, Utilities rewritten and features added.",
-                        "^2ReWritten most of the Script :shrug: Don't know why I even took this as base.",
-                        "^2Tested by HH and ES."
+                        "^2Open source on Github: https://github.com/Musta1337."
                     }, 1500);
                 }));
 

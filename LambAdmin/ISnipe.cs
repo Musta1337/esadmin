@@ -317,7 +317,6 @@ namespace LambAdmin
                         {"<ft>", arguments[0] },
                     }));
                 }));
-            // HIDEBOMBICON
 
             // KNIFE
             CommandList.Add(new Command("knife", 1, Command.Behaviour.Normal,

@@ -22,7 +22,7 @@ namespace LambAdmin
 
         public static partial class ConfigValues
         {
-            public static string Version = "v1.0.0.4 Final Build";
+            public static string Version = "v1.0.0.6";
             public static string ConfigPath = @"scripts\ESAdmin\";
             public static string PromodPath = @"scripts\ESAdmin\Promod\";
             public static string iSnipePath = @"scripts\ESAdmin\iSnipe\";
@@ -867,12 +867,10 @@ namespace LambAdmin
         }
         public void UTILS_SetClientConnectDvar(Entity player)
         {
-            player.SetClientDvar("motd", (string)ConfigValues.G_motd);
             player.SetClientDvar("cg_objectiveText", (string)ConfigValues.ObjectiveText);
-            player.SetClientDvar("sv_network_fps", "200");
             player.SetClientDvar("sys_lockThreads", "all");
             player.SetClientDvar("com_maxFrameTime", "1000");
-            player.SetClientDvar("rate", "25000");
+            player.SetClientDvar("rate", "210000");
             if (bool.Parse(Sett_GetString("settings_enable_autofpsunlock")))
                 {
                 player.SetClientDvar("com_maxfps", "0");
@@ -933,7 +931,6 @@ namespace LambAdmin
         public void UTILS_OnServerStart()
         {
             PlayerConnected += UTILS_OnPlayerConnect;
-            PlayerConnecting += UTILS_OnPlayerConnecting;
             OnPlayerKilledEvent += UTILS_BetterBalance;
             //ServerDvars
             UTILS_SetServerDvars();
@@ -1034,6 +1031,8 @@ namespace LambAdmin
             Function.Call("setdvar", "sv_newRateThrottling", "2");
             Function.Call("setdvar", "sv_minPingClamp", "50");
             Function.Call("setdvar", "sv_cumulThinkTime", "1000");
+            Function.Call("makedvarserverinfo", "motd", ConfigValues.G_motd);
+            Function.Call("makedvarserverinfo", "didyouknow", ConfigValues.G_motd);
             Function.Call("setdvar", "sys_lockThreads", "all");
             WriteLog.Info("Server Dvar loaded.");
         }
@@ -1082,13 +1081,7 @@ namespace LambAdmin
                         player.Call("freezecontrols", false);
             });
         }
-
-        public void UTILS_OnPlayerConnecting(Entity player)
-        {
-            if (player.GetClantag().Contains(Encoding.ASCII.GetString(new byte[] { 0x5E, 0x02 })))
-                ExecuteCommand("dropclient " + player.GetEntityNumber() + " \"Get out.\"");
-            UTILS_SetClientConnectDvar(player);
-        }
+       
 
         public bool UTILS_ParseBool(string message)
         {
